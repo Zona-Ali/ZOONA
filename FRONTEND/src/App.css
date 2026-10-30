@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow: hidden;
+}
+
+.landingPageContainer {
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.12) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.12) 1px,
+            transparent 1px);
+
+    background-size: 20px 20px;
+    background-color: #afa2b1;
+    padding: 3rem;
+
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+
+.landingPageNav {
+
+    height: 12vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zoona-logo img {
+
+    height: 90px;
+}
+
+/* ================= MENU ================= */
+
+.register {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.register a {
+
+    text-decoration: none;
+
+    color: rgb(94, 88, 88);
+
+    font-size: 18px;
+
+    transition: .2s;
+}
+
+.register a:hover {
+
+    transform: translateY(-3px);
+    font-weight: bold;
+
+    color: #141413;
+}
+
+/* ================= BUTTON ================= */
+
+.btn {
+
+    padding: 14px 28px;
+
+    border: 2px solid #2e2d30;
+
+
+    background: #f5f1be;
+
+    color: rgb(94, 88, 88);
+
+
+    border-radius: 25% 36% 25% 36%;
+
+    cursor: pointer;
+
+    font-family: "Press Start 2P";
+
+    font-size: 12px;
+
+    box-shadow: 6px 6px #3f3f3f;
+
+    transition: .15s;
+}
+
+.btn:hover {
+
+    transform: translate(2px, 2px);
+    color: #141413;
+    box-shadow: 4px 4px #3f3f3f;
+
+}
+
+.btn:active {
+
+    transform: translate(6px, 6px);
+
+    box-shadow: none;
+}
+
+/* ================= HERO ================= */
+
+.landingPageContent {
+
+    height: 88vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+/* ================= LEFT ================= */
+
+.text-content {
+
+    width: 45%;
+
+    padding-left: 30px;
+}
+
+.text-content h1 {
+
+    font-family: "Press Start 2P";
+
+    font-size: 40px;
+
+    color: #f0eaa1;
+
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    text-shadow: 3px 3px #3f3f3f;
+}
+
+.text-content p {
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #3f3f3f;
+
+    max-width: 600px;
+}
+
+
+/* ================= IMAGE ================= */
+
+.image-content {
+
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.image-content img {
+
+    width: 95%;
+
+    border: 0.5px solid #2e2d30;
+
+
+
+    border-radius: 1rem;
+    box-shadow: 7px 7px #292828;
+}
+
+
+.float {
+
+
+    animation: float 8s infinite linear;
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0px);
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+    }
+
+    100% {
+
+        transform: translateY(0px);
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    .landingPageContainer {
+        padding: 2rem;
+    }
+
+    .text-content h1 {
+        font-size: 30px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+
+    .zoona-logo img {
+        height: 75px;
+    }
+
+    .btn {
+        padding: 12px 22px;
+        font-size: 10px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .landingPageContainer {
+        height: auto;
+        min-height: 100vh;
+        padding: 1.5rem;
+    }
+
+    .landingPageNav {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .register {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .register a {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 10px;
+    }
+
+    .landingPageContent {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        padding: 30px 0;
+        height: auto;
+    }
+
+    .text-content,
+    .image-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .text-content h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .text-content p {
+        max-width: 100%;
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    .image-content img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .zoona-logo img {
+        height: 65px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width:480px) {
+
+    .landingPageContainer {
+        padding: 1rem;
+    }
+
+    .text-content h1 {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .text-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .register {
+        gap: 10px;
+    }
+
+    .register a {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 8px;
+        box-shadow: 4px 4px #9779ca;
+    }
+
+    .image-content img {
+        width: 95%;
+    }
+
+    .zoona-logo img {
+        height: 55px;
+    }
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(109, 104, 255, 0.15);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Login Box */
+.loginBox {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(18px);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 28px;
+    padding: 35px;
+    position: relative;
+
+    box-shadow:
+        0 15px 35px rgba(98, 92, 255, 0.25),
+        0 0 20px rgba(255, 255, 255, 0.3);
+
+    animation: floatIn .5s ease;
+}
+
+/* Title */
+.loginBox h2 {
+    text-align: center;
+    color: #9779ca;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.loginBox form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Inputs */
+.loginBox input {
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.loginBox input::placeholder {
+    color: #888;
+}
+
+.loginBox input:focus {
+    background: white;
+    box-shadow: 0 0 0 3px #9779ca;
+}
+
+/* Login Button */
+.loginBox button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #9779ca, #8371a1);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.loginBox button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(122, 108, 255, 0.35);
+}
+
+/* Close Button */
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closeBtn:hover {
+    color: #f08282;
+    transform: rotate(90deg);
+}
+
+/* Animation */
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .loginBox {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .loginBox h2 {
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;700&display=swap');
+
+/* ========================================
+   Main Container
+======================================== */
+
+.homeContainer {
+    min-height: 100vh;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: #b1a6b2;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px),
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.15) 1px,
+            transparent 1px);
+
+    background-size: 20px 20px;
+
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+
+/* ========================================
+   Navbar
+======================================== */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: 100%;
+    padding: 25px 40px;
+
+    box-sizing: border-box;
+}
+
+
+/* Logo */
+
+.heading img {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    animation: float 8s infinite linear;
+}
+
+
+/* Navbar Buttons */
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+/* History and Logout Buttons */
+
+.historyBtn,
+.logoutBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 130px;
+    height: 45px;
+
+    padding: 14px 20px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #2e2d30;
+
+    background: #f5f1be;
+    color: #5e5858;
+
+    border-radius: 25% 36% 25% 36%;
+
+    cursor: pointer;
+
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 12px;
+
+    box-shadow: 6px 6px #3f3f3f;
+
+    transition:
+        transform 0.15s,
+        box-shadow 0.15s,
+        color 0.15s;
+}
+
+
+.historyBtn:hover,
+.logoutBtn:hover {
+    transform: translate(2px, 2px);
+
+    color: #141413;
+
+    box-shadow: 4px 4px #3f3f3f;
+}
+
+
+.historyBtn:active,
+.logoutBtn:active {
+    transform: translate(6px, 6px);
+
+    box-shadow: none;
+}
+
+
+/* ========================================
+   Join Button
+======================================== */
+
+.joinBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 190px;
+    min-height: 45px;
+
+    padding: 14px 28px;
+
+    border: 2px solid #2e2d30;
+
+    background: #f5f1be;
+    color: #5e5858;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    box-shadow: 5px 5px #3f3f3f;
+
+    transition:
+        transform 0.15s,
+        box-shadow 0.15s,
+        color 0.15s;
+}
+
+
+.joinBtn:hover {
+    transform: translate(2px, 2px);
+
+    color: #141413;
+
+    box-shadow: 3px 3px #3f3f3f;
+}
+
+
+.joinBtn:active {
+    transform: translate(5px, 5px);
+
+    box-shadow: none;
+}
+
+
+/* ========================================
+   Hero Section
+======================================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    padding: 20px 5.5%;
+
+    box-sizing: border-box;
+
+    gap: clamp(25px, 5vw, 70px);
+}
+
+
+/* ========================================
+   Left Content
+======================================== */
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    flex: 1;
+
+    width: 100%;
+    max-width: 550px;
+
+    min-width: 0;
+}
+
+
+/* Main Heading */
+
+.heroTitle {
+    font-family: "Press Start 2P", sans-serif;
+
+    font-size: 40px;
+
+    color: #f0eaa1;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+    text-shadow: 3px 3px #3f3f3f;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* Description */
+
+.heroText {
+    margin: 0 0 35px;
+
+    color: #292824;
+
+    font-size: 19px;
+    line-height: 2;
+
+    max-width: 530px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ========================================
+   Meeting Form
+======================================== */
+
+.meetingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 420px;
+
+    gap: 25px;
+}
+
+
+/* ========================================
+   Right Illustration
+======================================== */
+
+.heroRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+
+    min-width: 0;
+    width: 100%;
+}
+
+
+.heroImage {
+    display: block;
+
+    width: 100%;
+    max-width: 570px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+    border: 1px solid #292824;
+
+    box-shadow: 8px 8px 0 #4a4945;
+}
+
+
+/* ========================================
+   History Overlay
+======================================== */
+
+.historyOverlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    z-index: 20;
+}
+
+
+.historyOverlayOpen {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ========================================
+   History Drawer
+======================================== */
+
+.historyDrawer {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 400px;
+    max-width: 88vw;
+
+    height: 100vh;
+    height: 100dvh;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: rgba(122, 85, 146, 0.15);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-left: 2px solid #292824;
+
+    box-shadow: -8px 0 20px rgba(0, 0, 0, 0.2);
+
+    transform: translateX(100%);
+
+    visibility: hidden;
+
+    transition:
+        transform 0.35s ease-in-out,
+        visibility 0.35s ease-in-out;
+
+    overflow-y: auto;
+
+    z-index: 21;
+}
+
+
+.historyDrawerOpen {
+    transform: translateX(0);
+
+    visibility: visible;
+}
+
+
+/* ========================================
+   History Header
+======================================== */
+
+.historyHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.historyHeader h2 {
+    margin: 0;
+
+    font-size: 2rem;
+
+    color: #050505;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ========================================
+   History List
+======================================== */
+
+.historyDisplay {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    color: #292824;
+
+    overflow-wrap: anywhere;
+}
+
+
+.historyItem {
+    padding: 15px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    font-family: sans-serif;
+
+    border: 1px solid #292824;
+    border-radius: 12px;
+
+    overflow-wrap: anywhere;
+}
+
+
+.historyItem p {
+    margin: 6px 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ========================================
+   Tablets and Small Laptops
+======================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+
+    .heading img {
+        width: clamp(180px, 30vw, 280px);
+    }
+
+
+    .navButtons {
+        gap: 12px;
+    }
+
+
+    .historyBtn,
+    .logoutBtn {
+        min-width: 110px;
+
+        padding: 12px 18px;
+
+        font-size: 10px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 45px;
+
+        padding: 30px 6%;
+    }
+
+
+    .heroLeft {
+        width: 100%;
+        max-width: 650px;
+    }
+
+
+    .heroRight {
+        width: 100%;
+        max-width: 650px;
+    }
+
+
+    .heroTitle {
+        font-size: clamp(28px, 5vw, 38px);
+    }
+
+
+    .heroText {
+        font-size: 18px;
+    }
+
+
+    .heroImage {
+        width: 100%;
+        max-width: 600px;
+    }
+
+
+    .meetingForm {
+        max-width: 500px;
+    }
+
+}
+
+
+/* ========================================
+   Mobile Phones
+======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 20px 16px;
+    }
+
+
+    .heading img {
+        width: min(75vw, 250px);
+    }
+
+
+    .navButtons {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    .historyBtn,
+    .logoutBtn {
+        min-width: 0;
+
+        width: 45%;
+        max-width: 150px;
+
+        height: 42px;
+
+        padding: 10px 12px;
+
+        font-size: 9px;
+
+        white-space: nowrap;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 18px 40px;
+
+        gap: 35px;
+    }
+
+
+    .heroLeft {
+        width: 100%;
+
+        align-items: flex-start;
+    }
+
+
+    .heroTitle {
+        font-size: clamp(20px, 6vw, 30px);
+
+        line-height: 1.7;
+
+        margin-bottom: 15px;
+    }
+
+
+    .heroText {
+        font-size: 16px;
+
+        line-height: 1.8;
+
+        margin-bottom: 25px;
+    }
+
+
+    .meetingForm {
+        width: 100%;
+        max-width: 100%;
+
+        gap: 20px;
+    }
+
+
+    .joinBtn {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+        min-height: 45px;
+
+        padding: 12px 16px;
+
+        font-size: 10px;
+    }
+
+
+    .heroRight {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .heroImage {
+        width: 100%;
+        max-width: 100%;
+
+        border-radius: 14px;
+
+        box-shadow: 5px 5px 0 #4a4945;
+    }
+
+
+    .historyDrawer {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 20px;
+    }
+
+
+    .historyHeader h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .historyItem {
+        padding: 12px;
+    }
+
+
+    .historyItem p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ========================================
+   Very Small Phones
+======================================== */
+
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 18px 12px;
+    }
+
+
+    .hero {
+        padding: 20px 14px 35px;
+    }
+
+
+    .heroTitle {
+        font-size: 19px;
+    }
+
+
+    .heroText {
+        font-size: 14px;
+    }
+
+
+    .historyBtn,
+    .logoutBtn {
+        font-size: 8px;
+
+        padding: 8px;
+    }
+
+
+    .joinBtn {
+        font-size: 9px;
+    }
+
+
+    .historyDrawer {
+        padding: 16px;
+    }
+
+}
+
+
+/* ========================================
+   Floating Animation
+======================================== */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+
+/* ========================================
+   Reduced Motion Accessibility
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .heading img {
+        animation: none;
+    }
+
+
+    .historyOverlay,
+    .historyDrawer,
+    .historyBtn,
+    .logoutBtn,
+    .joinBtn {
+        transition: none;
+    }
+
+}
