@@ -347,7 +347,7 @@
 
     box-sizing: border-box;
 
-    background: rgba(122, 85, 146, 0.15);
+    background: rgba(122, 85, 146, 0.449);
 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -422,7 +422,7 @@
 .historyItem {
     padding: 15px;
 
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.785);
 
     font-family: sans-serif;
 
